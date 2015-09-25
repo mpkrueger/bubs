@@ -12,7 +12,6 @@
 		C9074F9D1BAF88910088EA1E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074F9C1BAF88910088EA1E /* SecondViewController.swift */; };
 		C9074FA01BAF88910088EA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9074F9E1BAF88910088EA1E /* Main.storyboard */; };
 		C9074FA51BAF88910088EA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9074FA31BAF88910088EA1E /* LaunchScreen.storyboard */; };
-		C9074FB01BAF88910088EA1E /* BubsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074FAF1BAF88910088EA1E /* BubsTests.swift */; };
 		C9074FBB1BAF88910088EA1E /* BubsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074FBA1BAF88910088EA1E /* BubsUITests.swift */; };
 		C9074FCA1BAF90320088EA1E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FC91BAF90320088EA1E /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		C9074FCC1BAF90450088EA1E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FCB1BAF90450088EA1E /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
@@ -29,21 +28,14 @@
 		C9074FE21BAF90D00088EA1E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FE11BAF90D00088EA1E /* StoreKit.framework */; };
 		C9074FE41BAF90DB0088EA1E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FE31BAF90DB0088EA1E /* SystemConfiguration.framework */; };
 		C9074FE61BAF91050088EA1E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FE51BAF91050088EA1E /* libsqlite3.tbd */; };
-		C9074FF41BAF9E200088EA1E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FF11BAF9E200088EA1E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		C9074FF51BAF9E200088EA1E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FF21BAF9E200088EA1E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		C9074FF61BAF9E200088EA1E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9074FF31BAF9E200088EA1E /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C9074FF81BAFC1090088EA1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9074FF71BAFC1090088EA1E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		C9074FFA1BAFC2FE0088EA1E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C9821F1B1BB476C100D1FDC5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		C9821F1C1BB476C100D1FDC5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		C9821F1D1BB476C100D1FDC5 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C9074FAC1BAF88910088EA1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9074F8D1BAF88910088EA1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9074F941BAF88910088EA1E;
-			remoteInfo = Bubs;
-		};
 		C9074FB71BAF88910088EA1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C9074F8D1BAF88910088EA1E /* Project object */;
@@ -61,9 +53,6 @@
 		C9074F9F1BAF88910088EA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9074FA41BAF88910088EA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9074FA61BAF88910088EA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9074FAB1BAF88910088EA1E /* BubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9074FAF1BAF88910088EA1E /* BubsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubsTests.swift; sourceTree = "<group>"; };
-		C9074FB11BAF88910088EA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9074FB61BAF88910088EA1E /* BubsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9074FBA1BAF88910088EA1E /* BubsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubsUITests.swift; sourceTree = "<group>"; };
 		C9074FBC1BAF88910088EA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,11 +72,11 @@
 		C9074FE31BAF90DB0088EA1E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C9074FE51BAF91050088EA1E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C9074FED1BAF99560088EA1E /* Bubs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bubs-Bridging-Header.h"; sourceTree = "<group>"; };
-		C9074FF11BAF9E200088EA1E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		C9074FF21BAF9E200088EA1E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		C9074FF31BAF9E200088EA1E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		C9074FF71BAFC1090088EA1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9074FF51BAF9E200088EA1E /* FBSDKLoginKit.framework in Frameworks */,
+				C9821F1C1BB476C100D1FDC5 /* FBSDKLoginKit.framework in Frameworks */,
 				C9074FE61BAF91050088EA1E /* libsqlite3.tbd in Frameworks */,
 				C9074FE41BAF90DB0088EA1E /* SystemConfiguration.framework in Frameworks */,
 				C9074FE21BAF90D00088EA1E /* StoreKit.framework in Frameworks */,
@@ -109,17 +98,10 @@
 				C9074FD21BAF90950088EA1E /* Accounts.framework in Frameworks */,
 				C9074FCC1BAF90450088EA1E /* Parse.framework in Frameworks */,
 				C9074FCA1BAF90320088EA1E /* Bolts.framework in Frameworks */,
-				C9074FF61BAF9E200088EA1E /* FBSDKShareKit.framework in Frameworks */,
-				C9074FF41BAF9E200088EA1E /* FBSDKCoreKit.framework in Frameworks */,
+				C9821F1D1BB476C100D1FDC5 /* FBSDKShareKit.framework in Frameworks */,
+				C9821F1B1BB476C100D1FDC5 /* FBSDKCoreKit.framework in Frameworks */,
 				C9074FD01BAF90640088EA1E /* ParseUI.framework in Frameworks */,
 				C9074FCF1BAF90640088EA1E /* ParseFacebookUtilsV4.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9074FA81BAF88910088EA1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				C9074F971BAF88910088EA1E /* Bubs */,
-				C9074FAE1BAF88910088EA1E /* BubsTests */,
 				C9074FB91BAF88910088EA1E /* BubsUITests */,
 				C9074FC81BAF8FA90088EA1E /* Frameworks */,
 				C9074F961BAF88910088EA1E /* Products */,
@@ -148,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				C9074F951BAF88910088EA1E /* Bubs.app */,
-				C9074FAB1BAF88910088EA1E /* BubsTests.xctest */,
 				C9074FB61BAF88910088EA1E /* BubsUITests.xctest */,
 			);
 			name = Products;
@@ -170,15 +150,6 @@
 			path = Bubs;
 			sourceTree = "<group>";
 		};
-		C9074FAE1BAF88910088EA1E /* BubsTests */ = {
-			isa = PBXGroup;
-			children = (
-				C9074FAF1BAF88910088EA1E /* BubsTests.swift */,
-				C9074FB11BAF88910088EA1E /* Info.plist */,
-			);
-			path = BubsTests;
-			sourceTree = "<group>";
-		};
 		C9074FB91BAF88910088EA1E /* BubsUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,9 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				C9074FE51BAF91050088EA1E /* libsqlite3.tbd */,
-				C9074FF11BAF9E200088EA1E /* FBSDKCoreKit.framework */,
-				C9074FF21BAF9E200088EA1E /* FBSDKLoginKit.framework */,
-				C9074FF31BAF9E200088EA1E /* FBSDKShareKit.framework */,
+				C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */,
+				C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */,
+				C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */,
 				C9074FE31BAF90DB0088EA1E /* SystemConfiguration.framework */,
 				C9074FE11BAF90D00088EA1E /* StoreKit.framework */,
 				C9074FDF1BAF90CA0088EA1E /* Social.framework */,
@@ -233,24 +204,6 @@
 			productReference = C9074F951BAF88910088EA1E /* Bubs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9074FAA1BAF88910088EA1E /* BubsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9074FC21BAF88910088EA1E /* Build configuration list for PBXNativeTarget "BubsTests" */;
-			buildPhases = (
-				C9074FA71BAF88910088EA1E /* Sources */,
-				C9074FA81BAF88910088EA1E /* Frameworks */,
-				C9074FA91BAF88910088EA1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9074FAD1BAF88910088EA1E /* PBXTargetDependency */,
-			);
-			name = BubsTests;
-			productName = BubsTests;
-			productReference = C9074FAB1BAF88910088EA1E /* BubsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		C9074FB51BAF88910088EA1E /* BubsUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9074FC51BAF88910088EA1E /* Build configuration list for PBXNativeTarget "BubsUITests" */;
@@ -282,10 +235,6 @@
 					C9074F941BAF88910088EA1E = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					C9074FAA1BAF88910088EA1E = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = C9074F941BAF88910088EA1E;
-					};
 					C9074FB51BAF88910088EA1E = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = C9074F941BAF88910088EA1E;
@@ -306,7 +255,6 @@
 			projectRoot = "";
 			targets = (
 				C9074F941BAF88910088EA1E /* Bubs */,
-				C9074FAA1BAF88910088EA1E /* BubsTests */,
 				C9074FB51BAF88910088EA1E /* BubsUITests */,
 			);
 		};
@@ -320,13 +268,6 @@
 				C9074FF81BAFC1090088EA1E /* Images.xcassets in Resources */,
 				C9074FA51BAF88910088EA1E /* LaunchScreen.storyboard in Resources */,
 				C9074FA01BAF88910088EA1E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9074FA91BAF88910088EA1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,14 +292,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9074FA71BAF88910088EA1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9074FB01BAF88910088EA1E /* BubsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C9074FB21BAF88910088EA1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,11 +303,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C9074FAD1BAF88910088EA1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9074F941BAF88910088EA1E /* Bubs */;
-			targetProxy = C9074FAC1BAF88910088EA1E /* PBXContainerItemProxy */;
-		};
 		C9074FB81BAF88910088EA1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C9074F941BAF88910088EA1E /* Bubs */;
@@ -423,7 +351,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -518,30 +446,6 @@
 			};
 			name = Release;
 		};
-		C9074FC31BAF88910088EA1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BubsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.journeyjots.BubsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubs.app/Bubs";
-			};
-			name = Debug;
-		};
-		C9074FC41BAF88910088EA1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BubsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.journeyjots.BubsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubs.app/Bubs";
-			};
-			name = Release;
-		};
 		C9074FC61BAF88910088EA1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,15 +487,6 @@
 			buildConfigurations = (
 				C9074FC01BAF88910088EA1E /* Debug */,
 				C9074FC11BAF88910088EA1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9074FC21BAF88910088EA1E /* Build configuration list for PBXNativeTarget "BubsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9074FC31BAF88910088EA1E /* Debug */,
-				C9074FC41BAF88910088EA1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
