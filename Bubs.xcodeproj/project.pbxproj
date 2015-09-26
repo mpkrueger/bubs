@@ -34,6 +34,9 @@
 		C9821F1B1BB476C100D1FDC5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C9821F1C1BB476C100D1FDC5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C9821F1D1BB476C100D1FDC5 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		C9C18BD11BB5E92E0098291A /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C18BD01BB5E92E0098291A /* OnboardingPageVC.swift */; settings = {ASSET_TAGS = (); }; };
+		C9C18BD31BB5E9B40098291A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C18BD21BB5E9B40098291A /* IntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C9C18BD51BB5E9FB0098291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C18BD41BB5E9FB0098291A /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C9C18BD01BB5E92E0098291A /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
+		C9C18BD21BB5E9B40098291A /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		C9C18BD41BB5E9FB0098291A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 				C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */,
 				C9074FFD1BB5080E0088EA1E /* NewChildViewController.swift */,
 				C9074F9E1BAF88910088EA1E /* Main.storyboard */,
+				C9C18BD21BB5E9B40098291A /* IntroViewController.swift */,
+				C9C18BD41BB5E9FB0098291A /* SignUpViewController.swift */,
+				C9C18BD01BB5E92E0098291A /* OnboardingPageVC.swift */,
 				C9074FF71BAFC1090088EA1E /* Images.xcassets */,
 				C9074FA31BAF88910088EA1E /* LaunchScreen.storyboard */,
 				C9074FA61BAF88910088EA1E /* Info.plist */,
@@ -288,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C18BD11BB5E92E0098291A /* OnboardingPageVC.swift in Sources */,
 				C9074F9D1BAF88910088EA1E /* SecondViewController.swift in Sources */,
+				C9C18BD51BB5E9FB0098291A /* SignUpViewController.swift in Sources */,
+				C9C18BD31BB5E9B40098291A /* IntroViewController.swift in Sources */,
 				C9074FFE1BB5080E0088EA1E /* NewChildViewController.swift in Sources */,
 				C9074FFA1BAFC2FE0088EA1E /* MoreViewController.swift in Sources */,
 				C9074F991BAF88910088EA1E /* AppDelegate.swift in Sources */,

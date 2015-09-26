@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UEU-Bt-RDp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -113,9 +113,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-ze-hc4">
                                 <rect key="frame" x="224" y="285" width="152" height="30"/>
                                 <state key="normal" title="Enter Your Child's Info"/>
-                                <connections>
-                                    <segue destination="PfK-PG-UyJ" kind="presentation" id="8NJ-MQ-lBY"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI1-f9-Rp9">
                                 <rect key="frame" x="67" y="189" width="467" height="41"/>
@@ -144,10 +141,82 @@
             </objects>
             <point key="canvasLocation" x="399" y="1122"/>
         </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Yee-cI-cYs">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="33j-1z-kvc" customClass="SignUpViewController" customModule="Bubs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDM-B0-77L"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHl-I6-yV4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1l-IF-w5q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoI-Nz-uZV">
+                                <rect key="frame" x="288" y="396" width="24" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2Jy-SP-6w8"/>
+                                    <constraint firstAttribute="width" constant="24" id="gRe-8W-yrO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TC-gE-ZPx">
+                                <rect key="frame" x="221" y="450" width="158" height="30"/>
+                                <state key="normal" title="Sign Up with Facebook"/>
+                                <connections>
+                                    <action selector="didTapFacebook:" destination="33j-1z-kvc" eventType="touchUpInside" id="xNc-b7-2b9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-yH-1DB">
+                                <rect key="frame" x="87" y="159" width="426" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuT-8C-6i1">
+                                <rect key="frame" x="87" y="240" width="426" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNH-Aq-pc6">
+                                <rect key="frame" x="276" y="306" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitEmail:" destination="33j-1z-kvc" eventType="touchUpInside" id="nYI-fm-wbL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gIZ-yH-1DB" firstAttribute="centerX" secondItem="qoI-Nz-uZV" secondAttribute="centerX" id="0HK-0d-8ff"/>
+                            <constraint firstItem="QNH-Aq-pc6" firstAttribute="top" secondItem="EuT-8C-6i1" secondAttribute="bottom" constant="36" id="4XV-5n-Evk"/>
+                            <constraint firstItem="EuT-8C-6i1" firstAttribute="trailing" secondItem="gIZ-yH-1DB" secondAttribute="trailing" id="Kqw-yG-9w0"/>
+                            <constraint firstItem="EuT-8C-6i1" firstAttribute="leading" secondItem="gIZ-yH-1DB" secondAttribute="leading" id="Mux-1L-gPy"/>
+                            <constraint firstItem="qoI-Nz-uZV" firstAttribute="centerX" secondItem="5TC-gE-ZPx" secondAttribute="centerX" id="XsE-wP-4Wg"/>
+                            <constraint firstItem="gIZ-yH-1DB" firstAttribute="leading" secondItem="f1l-IF-w5q" secondAttribute="leadingMargin" constant="67" id="Yga-QF-Hq9"/>
+                            <constraint firstItem="qoI-Nz-uZV" firstAttribute="top" secondItem="PDM-B0-77L" secondAttribute="bottom" constant="376" id="Z5X-N3-fP2"/>
+                            <constraint firstItem="gIZ-yH-1DB" firstAttribute="top" secondItem="PDM-B0-77L" secondAttribute="bottom" constant="139" id="a3p-6q-AFN"/>
+                            <constraint firstItem="qoI-Nz-uZV" firstAttribute="centerX" secondItem="f1l-IF-w5q" secondAttribute="centerX" id="bED-r6-SVe"/>
+                            <constraint firstItem="QNH-Aq-pc6" firstAttribute="centerX" secondItem="EuT-8C-6i1" secondAttribute="centerX" id="du8-Bn-oBU"/>
+                            <constraint firstItem="5TC-gE-ZPx" firstAttribute="top" secondItem="qoI-Nz-uZV" secondAttribute="bottom" constant="33" id="ghb-jF-3vw"/>
+                            <constraint firstItem="EuT-8C-6i1" firstAttribute="top" secondItem="gIZ-yH-1DB" secondAttribute="bottom" constant="51" id="hHG-fy-s68"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="gIZ-yH-1DB" id="FEv-lU-7p4"/>
+                        <outlet property="passwordTextField" destination="EuT-8C-6i1" id="RnL-3i-MQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kv9-cA-g81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-929" y="79"/>
+        </scene>
         <!--New Child View Controller-->
         <scene sceneID="SHJ-wg-Tic">
             <objects>
-                <viewController id="PfK-PG-UyJ" customClass="NewChildViewController" customModule="Bubs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewChildVC" id="PfK-PG-UyJ" customClass="NewChildViewController" customModule="Bubs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kol-28-xCb"/>
                         <viewControllerLayoutGuide type="bottom" id="wqm-Re-pyr"/>
@@ -176,12 +245,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-7q-ZgV">
-                                <rect key="frame" x="278" y="139" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-3p-VkE">
                                 <rect key="frame" x="283" y="524" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
@@ -189,6 +252,12 @@
                                     <action selector="saveButton:" destination="PfK-PG-UyJ" eventType="touchUpInside" id="pwR-AN-GsE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-7q-ZgV">
+                                <rect key="frame" x="250" y="139" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -214,7 +283,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfY-IX-aJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="1122"/>
+            <point key="canvasLocation" x="-929" y="770"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="fqG-f9-TJj">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" id="c4o-g3-mpo" customClass="IntroViewController" customModule="Bubs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ux3-Nx-meh"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZw-4J-xa5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jy0-3g-MUU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-ve-wM0">
+                                <rect key="frame" x="262" y="289" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uCK-ve-wM0" firstAttribute="top" secondItem="ux3-Nx-meh" secondAttribute="bottom" constant="269" id="0ZJ-XA-SCh"/>
+                            <constraint firstItem="uCK-ve-wM0" firstAttribute="centerX" secondItem="Jy0-3g-MUU" secondAttribute="centerX" id="U2B-4c-tHb"/>
+                            <constraint firstItem="uCK-ve-wM0" firstAttribute="centerY" secondItem="Jy0-3g-MUU" secondAttribute="centerY" id="xAp-7T-qxl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgx-cs-ofk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-929" y="-586"/>
+        </scene>
+        <!--Onboarding PageVC-->
+        <scene sceneID="9Gw-xp-Vf5">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UEU-Bt-RDp" customClass="OnboardingPageVC" customModule="Bubs" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0s-Yp-j6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1627" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
