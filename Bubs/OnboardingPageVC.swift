@@ -11,6 +11,9 @@ import UIKit
 
 class OnboardingPageVC: UIPageViewController {
 
+    var introVC : UIViewController!
+    var signUpVC : UIViewController!
+    var newChildVC : UIViewController!
     
     func getIntroVC() -> IntroViewController {
         return storyboard!.instantiateViewControllerWithIdentifier("IntroVC") as! IntroViewController
@@ -38,6 +41,12 @@ class OnboardingPageVC: UIPageViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
      
+    }
+    
+    func nextButtonPressed(sender: AnyObject) {
+        let nextVC : NSArray = [newChildVC]
+        
+        setViewControllers(nextVC as? [UIViewController], direction: .Forward, animated: true, completion: nil)
     }
 
 }

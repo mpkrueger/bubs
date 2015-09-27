@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
                         print(error)
                     } else {
                         print("hooray!")
+                        
                     }
                 })
             }
