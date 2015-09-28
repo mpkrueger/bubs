@@ -37,7 +37,8 @@ class SignUpViewController: UIViewController {
                         print(error)
                     } else {
                         print("hooray!")
-                        
+                        let newChildVC = self.storyboard?.instantiateViewControllerWithIdentifier("NewChildVC")
+                        self.showViewController(newChildVC!, sender: newChildVC)
                     }
                 })
             }

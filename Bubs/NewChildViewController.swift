@@ -33,9 +33,17 @@ class NewChildViewController: UIViewController {
             child["parent"] = PFUser.currentUser()
             
             child.saveInBackground()
+            
+            let childParentRelationship = PFObject(className: "childParentRelationships")
+            childParentRelationship["parent"] = PFUser.currentUser()
+            childParentRelationship["child"] = child
+            childParentRelationship["role"] = "parent"
+            
+            childParentRelationship.saveInBackground()
         }
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        let dashboard = self.storyboard?.instantiateViewControllerWithIdentifier("dashboard")
+        self.showViewController(dashboard!, sender: dashboard)
     }
     
 

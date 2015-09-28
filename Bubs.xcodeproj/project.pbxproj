@@ -31,6 +31,10 @@
 		C9074FF81BAFC1090088EA1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9074FF71BAFC1090088EA1E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		C9074FFA1BAFC2FE0088EA1E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C9074FFE1BB5080E0088EA1E /* NewChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9074FFD1BB5080E0088EA1E /* NewChildViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C981D8D11BB8B1AB009AC716 /* SecondIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981D8D01BB8B1AB009AC716 /* SecondIntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C981D8D31BB8E66D009AC716 /* DiaperChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981D8D21BB8E66D009AC716 /* DiaperChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C981D8D51BB9068A009AC716 /* FeedingRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981D8D41BB9068A009AC716 /* FeedingRecordViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C981D8D71BB9073C009AC716 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981D8D61BB9073C009AC716 /* DashboardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C9821F1B1BB476C100D1FDC5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C9821F1C1BB476C100D1FDC5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C9821F1D1BB476C100D1FDC5 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
@@ -79,6 +83,10 @@
 		C9074FF71BAFC1090088EA1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		C9074FFD1BB5080E0088EA1E /* NewChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChildViewController.swift; sourceTree = "<group>"; };
+		C981D8D01BB8B1AB009AC716 /* SecondIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondIntroViewController.swift; sourceTree = "<group>"; };
+		C981D8D21BB8E66D009AC716 /* DiaperChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaperChangeViewController.swift; sourceTree = "<group>"; };
+		C981D8D41BB9068A009AC716 /* FeedingRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedingRecordViewController.swift; sourceTree = "<group>"; };
+		C981D8D61BB9073C009AC716 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C9821F181BB476C100D1FDC5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C9821F191BB476C100D1FDC5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C9821F1A1BB476C100D1FDC5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -146,14 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				C9074F981BAF88910088EA1E /* AppDelegate.swift */,
+				C9C18BD01BB5E92E0098291A /* OnboardingPageVC.swift */,
+				C9C18BD21BB5E9B40098291A /* IntroViewController.swift */,
+				C981D8D01BB8B1AB009AC716 /* SecondIntroViewController.swift */,
+				C9C18BD41BB5E9FB0098291A /* SignUpViewController.swift */,
+				C9074FFD1BB5080E0088EA1E /* NewChildViewController.swift */,
+				C981D8D61BB9073C009AC716 /* DashboardViewController.swift */,
 				C9074F9A1BAF88910088EA1E /* FirstViewController.swift */,
 				C9074F9C1BAF88910088EA1E /* SecondViewController.swift */,
 				C9074FF91BAFC2FE0088EA1E /* MoreViewController.swift */,
-				C9074FFD1BB5080E0088EA1E /* NewChildViewController.swift */,
+				C981D8D21BB8E66D009AC716 /* DiaperChangeViewController.swift */,
+				C981D8D41BB9068A009AC716 /* FeedingRecordViewController.swift */,
 				C9074F9E1BAF88910088EA1E /* Main.storyboard */,
-				C9C18BD21BB5E9B40098291A /* IntroViewController.swift */,
-				C9C18BD41BB5E9FB0098291A /* SignUpViewController.swift */,
-				C9C18BD01BB5E92E0098291A /* OnboardingPageVC.swift */,
 				C9074FF71BAFC1090088EA1E /* Images.xcassets */,
 				C9074FA31BAF88910088EA1E /* LaunchScreen.storyboard */,
 				C9074FA61BAF88910088EA1E /* Info.plist */,
@@ -301,10 +313,14 @@
 				C9074F9D1BAF88910088EA1E /* SecondViewController.swift in Sources */,
 				C9C18BD51BB5E9FB0098291A /* SignUpViewController.swift in Sources */,
 				C9C18BD31BB5E9B40098291A /* IntroViewController.swift in Sources */,
+				C981D8D31BB8E66D009AC716 /* DiaperChangeViewController.swift in Sources */,
+				C981D8D51BB9068A009AC716 /* FeedingRecordViewController.swift in Sources */,
 				C9074FFE1BB5080E0088EA1E /* NewChildViewController.swift in Sources */,
+				C981D8D71BB9073C009AC716 /* DashboardViewController.swift in Sources */,
 				C9074FFA1BAFC2FE0088EA1E /* MoreViewController.swift in Sources */,
 				C9074F991BAF88910088EA1E /* AppDelegate.swift in Sources */,
 				C9074F9B1BAF88910088EA1E /* FirstViewController.swift in Sources */,
+				C981D8D11BB8B1AB009AC716 /* SecondIntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

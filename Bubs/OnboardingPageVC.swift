@@ -11,20 +11,12 @@ import UIKit
 
 class OnboardingPageVC: UIPageViewController {
 
-    var introVC : UIViewController!
-    var signUpVC : UIViewController!
-    var newChildVC : UIViewController!
-    
     func getIntroVC() -> IntroViewController {
         return storyboard!.instantiateViewControllerWithIdentifier("IntroVC") as! IntroViewController
     }
     
-    func getSignUpVC() -> SignUpViewController {
-        return storyboard!.instantiateViewControllerWithIdentifier("SignUpVC") as! SignUpViewController
-    }
-    
-    func getNewChildVC() -> NewChildViewController {
-        return storyboard!.instantiateViewControllerWithIdentifier("NewChildVC") as! NewChildViewController
+    func getSecondIntroVC() -> SecondIntroViewController {
+        return storyboard!.instantiateViewControllerWithIdentifier("SecondIntroVC") as! SecondIntroViewController
     }
     
     override func viewDidLoad() {
@@ -42,20 +34,12 @@ class OnboardingPageVC: UIPageViewController {
         super.didReceiveMemoryWarning()
      
     }
-    
-    func nextButtonPressed(sender: AnyObject) {
-        let nextVC : NSArray = [newChildVC]
-        
-        setViewControllers(nextVC as? [UIViewController], direction: .Forward, animated: true, completion: nil)
-    }
 
 }
 
 extension OnboardingPageVC : UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        if viewController.isKindOfClass(NewChildViewController) {
-            return getSignUpVC()
-        } else if viewController.isKindOfClass(SignUpViewController) {
+        if viewController.isKindOfClass(SecondIntroViewController) {
             return getIntroVC()
         } else {
             return nil
@@ -64,16 +48,14 @@ extension OnboardingPageVC : UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         if viewController.isKindOfClass(IntroViewController) {
-            return getSignUpVC()
-        } else if viewController.isKindOfClass(SignUpViewController) {
-            return getNewChildVC()
+            return getSecondIntroVC()
         } else {
             return nil
         }
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 3
+        return 2
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {

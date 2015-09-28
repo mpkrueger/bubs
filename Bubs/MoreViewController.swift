@@ -23,6 +23,12 @@ class MoreViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logout(sender: AnyObject) {
+        PFUser.logOut()
+        print("user logged out")
+        let firstViewVC = self.storyboard?.instantiateViewControllerWithIdentifier("FirstViewVC")
+        self.showViewController(firstViewVC!, sender: firstViewVC)
+    }
     
 
 }
