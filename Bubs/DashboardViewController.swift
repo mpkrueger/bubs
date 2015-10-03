@@ -14,17 +14,17 @@ class DashboardViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let query = PFQuery(className: "childParentRelationships")
-        query.whereKey("parent", equalTo: PFUser.currentUser()!)
-        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
-            if error == nil {
-                if let objects = objects as? [PFObject] {
-                    for object in objects {
-                        self.child = object["child"] as? PFObject
-                    }
-                }
-            }
-        }
+//        let query = PFQuery(className: "childParentRelationships")
+//        query.whereKey("parent", equalTo: PFUser.currentUser()!)
+//        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
+//            if error == nil {
+//                if let objects = objects as? [PFObject] {
+//                    for object in objects {
+//                        self.child = object["child"] as? PFObject
+//                    }
+//                }
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {

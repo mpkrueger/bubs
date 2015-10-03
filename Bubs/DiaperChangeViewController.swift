@@ -14,7 +14,10 @@ class DiaperChangeViewController: UIViewController {
 
     @IBOutlet weak var diaperNotes: UITextField!
     @IBOutlet weak var soilType: UISegmentedControl!
-
+    
+    convenience init(_ dictionary: Dictionary) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
