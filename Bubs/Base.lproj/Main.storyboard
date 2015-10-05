@@ -285,22 +285,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-ze-hc4">
-                                <rect key="frame" x="224" y="285" width="152" height="30"/>
-                                <state key="normal" title="Enter Your Child's Info"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI1-f9-Rp9">
-                                <rect key="frame" x="67" y="189" width="467" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="Kni-LP-L0d"/>
-                                </constraints>
-                                <string key="text">It looks like you haven't
- created a profile for your child.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVW-oB-oam">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVW-oB-oam">
                                 <rect key="frame" x="276" y="375" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
@@ -309,15 +294,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="FI1-f9-Rp9" firstAttribute="centerX" secondItem="oYC-ze-hc4" secondAttribute="centerX" id="8y5-yC-EW1"/>
-                            <constraint firstItem="oYC-ze-hc4" firstAttribute="centerX" secondItem="qwj-wy-Cg0" secondAttribute="centerX" id="Tm8-jB-JSg"/>
-                            <constraint firstItem="eVW-oB-oam" firstAttribute="centerX" secondItem="oYC-ze-hc4" secondAttribute="centerX" id="arg-Wi-e7S"/>
-                            <constraint firstItem="FI1-f9-Rp9" firstAttribute="leading" secondItem="qwj-wy-Cg0" secondAttribute="leadingMargin" constant="47" id="bA4-AW-z6s"/>
-                            <constraint firstItem="oYC-ze-hc4" firstAttribute="top" secondItem="FI1-f9-Rp9" secondAttribute="bottom" constant="55" id="bYm-cA-Kol"/>
-                            <constraint firstItem="eVW-oB-oam" firstAttribute="top" secondItem="oYC-ze-hc4" secondAttribute="bottom" constant="60" id="hw7-tT-y1y"/>
-                            <constraint firstItem="oYC-ze-hc4" firstAttribute="centerY" secondItem="qwj-wy-Cg0" secondAttribute="centerY" id="qRV-C6-TKo"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="zGO-Bd-dUT"/>
                 </viewController>
