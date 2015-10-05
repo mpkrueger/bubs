@@ -21,7 +21,7 @@
                                 <rect key="frame" x="241" y="107" width="119" height="30"/>
                                 <state key="normal" title="Record Changing"/>
                                 <connections>
-                                    <segue destination="bS6-i0-QvX" kind="show" id="tMn-iV-dr3"/>
+                                    <segue destination="bS6-i0-QvX" kind="show" identifier="RecordChanging" id="tMn-iV-dr3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spw-ZO-dp3">
@@ -64,9 +64,12 @@
                                     <constraint firstAttribute="width" constant="238" id="Ye3-Ke-CEw"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
+                                    <segment title="Left"/>
                                     <segment title="Right"/>
                                 </segments>
+                                <connections>
+                                    <action selector="breastChoice:" destination="UKn-So-BMW" eventType="valueChanged" id="ZqX-wa-8aQ"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="il1-45-lSf">
                                 <rect key="frame" x="283" y="415" width="34" height="30"/>
@@ -83,12 +86,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2V8-DR-znp">
-                                <rect key="frame" x="105" y="256" width="391" height="30"/>
+                                <rect key="frame" x="105" y="348" width="391" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ias-la-6AZ">
-                                <rect key="frame" x="277" y="216" width="46" height="21"/>
+                                <rect key="frame" x="277" y="308" width="46" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="3RL-cg-46I"/>
                                     <constraint firstAttribute="height" constant="21" id="BRp-2m-san"/>
@@ -97,22 +100,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TvY-sT-0D6">
+                                <rect key="frame" x="252" y="246" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="I8P-94-xEx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume (mL)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2P-bp-ptK">
+                                <rect key="frame" x="252" y="217" width="97" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QP7-w7-KhF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TvY-sT-0D6" firstAttribute="top" secondItem="m2P-bp-ptK" secondAttribute="bottom" constant="8" symbolic="YES" id="2aO-V3-OpR"/>
                             <constraint firstItem="4wy-bI-K5w" firstAttribute="top" secondItem="wnI-qj-lUZ" secondAttribute="bottom" constant="107" id="Bt9-Cf-teR"/>
                             <constraint firstItem="2V8-DR-znp" firstAttribute="leading" secondItem="auW-GK-n8y" secondAttribute="leadingMargin" constant="85" id="Epr-QK-J3C"/>
+                            <constraint firstItem="m2P-bp-ptK" firstAttribute="leading" secondItem="TvY-sT-0D6" secondAttribute="leading" id="LRt-gm-azC"/>
                             <constraint firstAttribute="bottom" secondItem="il1-45-lSf" secondAttribute="bottom" constant="155" id="MMh-ig-VKK"/>
-                            <constraint firstItem="ias-la-6AZ" firstAttribute="top" secondItem="4wy-bI-K5w" secondAttribute="bottom" constant="61" id="MrR-5K-thf"/>
+                            <constraint firstItem="ias-la-6AZ" firstAttribute="top" secondItem="4wy-bI-K5w" secondAttribute="bottom" constant="153" id="MrR-5K-thf"/>
                             <constraint firstItem="f1K-OV-Aoo" firstAttribute="top" secondItem="il1-45-lSf" secondAttribute="bottom" constant="32" id="OTX-eH-YNm"/>
                             <constraint firstItem="2V8-DR-znp" firstAttribute="centerX" secondItem="f1K-OV-Aoo" secondAttribute="centerX" id="a3R-Tf-7Xn"/>
                             <constraint firstItem="2V8-DR-znp" firstAttribute="centerX" secondItem="il1-45-lSf" secondAttribute="centerX" id="aba-y7-9dN"/>
                             <constraint firstItem="2V8-DR-znp" firstAttribute="centerX" secondItem="4wy-bI-K5w" secondAttribute="centerX" id="cFZ-xM-iLm"/>
+                            <constraint firstItem="ias-la-6AZ" firstAttribute="top" secondItem="TvY-sT-0D6" secondAttribute="bottom" constant="32" id="fZE-7k-GlL"/>
                             <constraint firstItem="4wy-bI-K5w" firstAttribute="centerX" secondItem="auW-GK-n8y" secondAttribute="centerX" id="fcW-ZC-ImJ"/>
                             <constraint firstItem="2V8-DR-znp" firstAttribute="top" secondItem="ias-la-6AZ" secondAttribute="bottom" constant="19" id="ffA-8H-dUk"/>
                             <constraint firstItem="ias-la-6AZ" firstAttribute="centerX" secondItem="2V8-DR-znp" secondAttribute="centerX" id="ihy-Oz-Nt6"/>
+                            <constraint firstItem="m2P-bp-ptK" firstAttribute="trailing" secondItem="TvY-sT-0D6" secondAttribute="trailing" id="o55-LQ-CVj"/>
+                            <constraint firstItem="TvY-sT-0D6" firstAttribute="centerX" secondItem="ias-la-6AZ" secondAttribute="centerX" id="wqL-Mx-UR3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="breastToggle" destination="4wy-bI-K5w" id="4A2-kq-xJp"/>
+                        <outlet property="feedingNotes" destination="2V8-DR-znp" id="JaJ-yr-lZX"/>
+                        <outlet property="volume" destination="TvY-sT-0D6" id="nZQ-vk-gzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RlE-Yf-Cxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,7 +163,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-8H-Cca">
                                 <rect key="frame" x="101" y="266" width="398" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lz-iG-acQ">
                                 <rect key="frame" x="283" y="364" width="34" height="30"/>

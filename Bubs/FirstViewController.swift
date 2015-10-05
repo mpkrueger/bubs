@@ -13,6 +13,7 @@ import ParseUI
 class FirstViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
     var child: PFObject?
+    var dataSource: AppDataSource?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,9 +22,10 @@ class FirstViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dashboard = self.tabBarController as! DashboardViewController
-        child = dashboard.child
-        print(child)
+        dataSource = AppDataSource()
+        dataSource?.queryForData()
+        child = dataSource?.bubsData["child"] as? PFObject
+        print(child!)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -44,9 +46,10 @@ class FirstViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "RecordChanging" {
             let diaper = segue.destinationViewController as! DiaperChangeViewController
-            diaper.child = child
+            diaper.child = self.child
         } else if segue.identifier == "RecordFeeding" {
-            
+            let feeding = segue.destinationViewController as! FeedingRecordViewController
+            feeding.child = self.child
         }
     }
 

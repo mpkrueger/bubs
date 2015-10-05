@@ -10,22 +10,25 @@ import UIKit
 
 class DashboardViewController: UITabBarController {
     var child: PFObject?
+    var dataSource: AppDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let query = PFQuery(className: "childParentRelationships")
-//        query.whereKey("parent", equalTo: PFUser.currentUser()!)
-//        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
-//            if error == nil {
-//                if let objects = objects as? [PFObject] {
-//                    for object in objects {
-//                        self.child = object["child"] as? PFObject
-//                    }
-//                }
-//            }
-//        }
     }
+    
+    convenience init(bubsData:Dictionary<String, AnyObject>) {
+        self.init()
+        self.dataSource = AppDataSource()
+        self.dataSource?.queryForData()
+        
+        
+        
+        child = self.dataSource!.bubsData["child"] as? PFObject
+
+    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

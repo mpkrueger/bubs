@@ -8,19 +8,16 @@
 
 import UIKit
 
-class DiaperChangeViewController: UIViewController {
+class DiaperChangeViewController: UIViewController, UITextFieldDelegate {
     var soil: String!
     var child: PFObject?
 
     @IBOutlet weak var diaperNotes: UITextField!
     @IBOutlet weak var soilType: UISegmentedControl!
     
-    convenience init(_ dictionary: Dictionary) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.diaperNotes.delegate = self
         
         print(child)
         
