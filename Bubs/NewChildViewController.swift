@@ -34,6 +34,8 @@ class NewChildViewController: UIViewController {
             
             child.saveInBackground()
             
+            NSNotificationCenter.defaultCenter().postNotificationName("setChildNotificationKey", object: self)
+            
             let childParentRelationship = PFObject(className: "childParentRelationships")
             childParentRelationship["parent"] = PFUser.currentUser()
             childParentRelationship["child"] = child

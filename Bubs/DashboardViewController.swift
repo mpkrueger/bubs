@@ -23,8 +23,9 @@ class DashboardViewController: UITabBarController {
         self.dataSource?.queryForData()
         
         
-        
-        child = self.dataSource!.bubsData["child"] as? PFObject
+        if bubsData.count > 0 {
+            child = self.dataSource!.bubsData["child"] as? PFObject
+        }
 
     }
 

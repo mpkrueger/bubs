@@ -13,7 +13,6 @@ import ParseUI
 class FirstViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
     var child: PFObject?
-    var dataSource: AppDataSource?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,10 +21,7 @@ class FirstViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = AppDataSource()
-        dataSource?.queryForData()
-        child = dataSource?.bubsData["child"] as? PFObject
-        print(child!)
+        child = AppDataSource().bubsData["childObject"] as? PFObject
     }
     
     override func viewDidAppear(animated: Bool) {

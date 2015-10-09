@@ -61,6 +61,8 @@ class SignUpViewController: UIViewController {
                 } else {
                     print("User logged in through FB")
                 }
+                let newChildVC = self.storyboard?.instantiateViewControllerWithIdentifier("NewChildVC")
+                self.showViewController(newChildVC!, sender: newChildVC)
             } else {
                 print("Uh oh. The user cancelled the FB login.")
             }

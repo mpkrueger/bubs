@@ -10,8 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var child: String?
+    @IBOutlet weak var heroLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        child = AppDataSource().bubsData["childName"] as? String
+        
+        heroLabel.text = child!
         // Do any additional setup after loading the view, typically from a nib.
     }
 

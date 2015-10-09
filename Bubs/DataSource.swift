@@ -14,20 +14,39 @@ class AppDataSource: NSObject {
     
     override init() {
         
-        
         super.init()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "queryForData", name: "setChildNotificationKey", object: nil)
+        
+        self.queryForData()
+        
     }
     
-    func queryForData() -> Dictionary<String, AnyObject> {
+    func queryForData() -> Dictionary<String, AnyObject>? {
         var relationships : [PFObject]
         
-        let query = PFQuery(className: "childParentRelationships")
-        query.whereKey("parent", equalTo: PFUser.currentUser()!)
-        relationships = query.findObjects() as! [PFObject]
-
-        let childRelation = relationships[0]
-        bubsData["child"] = childRelation["child"]
-        
+        if PFUser.currentUser() != nil {
+            let query = PFQuery(className: "childParentRelationships")
+            query.whereKey("parent", equalTo: PFUser.currentUser()!)
+            relationships = query.findObjects() as! [PFObject]
+            
+            if relationships.count > 0 {
+                let childRelation = relationships[0]
+                bubsData["childObject"] = childRelation["child"]
+                
+                let childObject = bubsData["childObject"] as! PFObject
+                let childID = childObject.objectId!
+                
+                let childQuery = PFQuery(className: "Children")
+                let childName = childQuery.getObjectWithId(childID)!["name"]
+                
+                bubsData["childName"] = childName
+            }
+            
+            
+            
+        }
+        print(bubsData)
         return bubsData
     }
     
