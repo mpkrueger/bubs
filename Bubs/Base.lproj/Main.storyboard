@@ -288,17 +288,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVW-oB-oam">
-                                <rect key="frame" x="276" y="375" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVW-oB-oam">
+                                <rect key="frame" x="276" y="347" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logout:" destination="3UY-MN-pb6" eventType="touchUpInside" id="g7X-qi-8wJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bae-b8-3yf">
+                                <rect key="frame" x="193" y="220" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="FCb-YM-e8S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite another parent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-kC-C4J">
+                                <rect key="frame" x="219" y="191" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXn-fz-axA">
+                                <rect key="frame" x="243" y="258" width="115" height="30"/>
+                                <state key="normal" title="Submit Invitation"/>
+                                <connections>
+                                    <action selector="submitInvitation:" destination="3UY-MN-pb6" eventType="touchUpInside" id="inu-Rr-40S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVW-oB-oam" firstAttribute="top" secondItem="bae-b8-3yf" secondAttribute="bottom" constant="97" id="HBQ-11-aao"/>
+                            <constraint firstItem="bae-b8-3yf" firstAttribute="top" secondItem="fbJ-kC-C4J" secondAttribute="bottom" constant="8" symbolic="YES" id="UTC-dm-Sc3"/>
+                            <constraint firstItem="bae-b8-3yf" firstAttribute="centerX" secondItem="eVW-oB-oam" secondAttribute="centerX" id="ciu-MP-ZWb"/>
+                            <constraint firstItem="jXn-fz-axA" firstAttribute="centerX" secondItem="bae-b8-3yf" secondAttribute="centerX" id="j7A-UB-DeN"/>
+                            <constraint firstItem="fbJ-kC-C4J" firstAttribute="centerX" secondItem="bae-b8-3yf" secondAttribute="centerX" id="kod-S4-R7C"/>
+                            <constraint firstItem="jXn-fz-axA" firstAttribute="top" secondItem="bae-b8-3yf" secondAttribute="bottom" constant="8" symbolic="YES" id="p4b-lU-9JK"/>
+                            <constraint firstItem="Nlm-sn-21d" firstAttribute="top" secondItem="eVW-oB-oam" secondAttribute="bottom" constant="174" id="qCk-fk-e9e"/>
+                            <constraint firstItem="eVW-oB-oam" firstAttribute="centerX" secondItem="qwj-wy-Cg0" secondAttribute="centerX" id="yBv-di-sTk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="zGO-Bd-dUT"/>
+                    <connections>
+                        <outlet property="invitationEmail" destination="bae-b8-3yf" id="B5H-KK-EUR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6m-rV-Nlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

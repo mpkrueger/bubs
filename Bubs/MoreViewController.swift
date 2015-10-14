@@ -12,6 +12,8 @@ import ParseUI
 
 class MoreViewController: UIViewController {
 
+    @IBOutlet weak var invitationEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,15 @@ class MoreViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func submitInvitation(sender: AnyObject) {
+        let invitee = PFObject(className: "Invitations")
+        invitee["emailAddress"] = invitationEmail.text
+        invitee["inviter"] = PFUser.currentUser()
+        invitee["consumed"] = false
+        
+        invitee.saveInBackground()
     }
     
     @IBAction func logout(sender: AnyObject) {

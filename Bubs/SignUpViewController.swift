@@ -37,6 +37,11 @@ class SignUpViewController: UIViewController {
                         print(error)
                     } else {
                         print("hooray!")
+//                        
+//                        var query = PFQuery(className: "Invitations")
+//                        if query.whereKey("emailAddress", equalTo: emailAddress)
+                        
+                        
                         let newChildVC = self.storyboard?.instantiateViewControllerWithIdentifier("NewChildVC")
                         self.showViewController(newChildVC!, sender: newChildVC)
                     }
@@ -45,8 +50,6 @@ class SignUpViewController: UIViewController {
         } else {
             print("there was an error creating the account")
         }
-        
-        
         
     }
     
