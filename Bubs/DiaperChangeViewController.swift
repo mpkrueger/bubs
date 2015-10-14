@@ -21,8 +21,6 @@ class DiaperChangeViewController: UIViewController, UITextFieldDelegate {
         
         child = AppDataSource().bubsData["childObject"] as? PFObject
         
-        print(child)
-        
     }
 
     override func didReceiveMemoryWarning() {
