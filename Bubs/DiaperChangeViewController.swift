@@ -19,6 +19,8 @@ class DiaperChangeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.diaperNotes.delegate = self
         
+        child = AppDataSource().bubsData["childObject"] as? PFObject
+        
         print(child)
         
     }

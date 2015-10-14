@@ -22,6 +22,8 @@ class FeedingRecordViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.feedingNotes.delegate = self
         self.volume.delegate = self
+        
+        child = AppDataSource().bubsData["childObject"] as? PFObject
 
         // Do any additional setup after loading the view.
     }
